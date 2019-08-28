@@ -46,13 +46,13 @@
 	<platform name="android">
 		<preference name="BILLING_KEY" />
 
-		<config-file target="app/src/main/res/xml/config.xml" parent="/*">
+		<config-file target="config.xml" parent="/*">
 			<feature name="WizPurchase">
 				<param name="android-package" value="jp.wizcorp.wizpurchase.WizPurchase" />
 			</feature>
 		</config-file>
 
-		<config-file target="app/src/main/AndroidManifest.xml" parent="/manifest">
+		<config-file target="AndroidManifest.xml" parent="/*">
 			<uses-permission android:name="com.android.vending.BILLING" />
 		</config-file>
 
